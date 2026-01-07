@@ -26,10 +26,16 @@ To use this script, you'll need Python 3.x and several libraries installed on yo
 - **Pandas**
 - **Scikit-learn**
 - **Imbalanced-learn**
+- **LazyPredict**
 
 You can install the necessary Python libraries using pip:
 ```bash
-pip install pandas scikit-learn imbalanced-learn
+pip install -r requirements.txt
+```
+
+Alternatively, you can install them individually:
+```bash
+pip install pandas scikit-learn imbalanced-learn lazypredict
 ```
 To get started with this project, follow these steps:
 
@@ -65,7 +71,7 @@ This script allows users to select different machine learning algorithms via com
 ### Usage Example
 Run the script from the command line, specifying the path to your dataset along with options to configure the model:
 ```bash
-python ML_runner.py <path_to_dataset> --model <model_name> --target <target_column> [other options]
+python Customize_script.py <path_to_dataset> --model <model_name> --target <target_column> [other options]
 ```
 ## Model Performance Results with Resampling Process
 
@@ -152,7 +158,7 @@ pip install pandas scikit-learn imbalanced-learn lazypredict
 - `--file_path`: Path to the CSV file containing the dataset (required).
 - `--target_label`:SalmonellaSPAnalysis or CampylobacterAnalysis30ml
 ```bash
-python LazyChicken.py /path/to/Dataset_RawChickenCarcasses.xlsx --target SalmonellaSPAnalysis( CampylobacterAnalysis30ml)
+python Lazy_script.py /path/to/SalCampChicken_clean.csv --target SalmonellaSPAnalysis( CampylobacterAnalysis30ml)
 ```
 
 3. The script will output the number of positive cases for the target variable and evaluate various machine learning models.

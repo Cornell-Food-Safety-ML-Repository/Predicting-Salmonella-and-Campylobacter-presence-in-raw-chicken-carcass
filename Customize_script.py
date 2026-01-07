@@ -13,7 +13,7 @@ from imblearn.over_sampling import RandomOverSampler
 from sklearn.inspection import permutation_importance
 
 def load_and_clean_data(filepath):
-    df = pd.read_excel(filepath)
+    df = pd.read_csv(filepath)
     columns_to_drop = [
         'EstablishmentID', 'EstablishmentNumber', 'EstablishmentName', 'State',
         'ProjectCode', 'ProjectName', 'FormID', 'SampleSource', 'SalmonellaSerotype',

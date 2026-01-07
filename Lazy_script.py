@@ -8,7 +8,7 @@ from lazypredict.Supervised import LazyClassifier
 from imblearn.over_sampling import SMOTE
 
 def load_and_clean_data(filepath):
-    df = pd.read_excel(filepath)
+    df = pd.read_csv(filepath)
 
     # Columns to be dropped as specified
     columns_to_drop = [
